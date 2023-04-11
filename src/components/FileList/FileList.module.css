@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: var(--color-white);
+  margin: 40px 180px;
+  border-radius: 10px;
+  padding: 30px;
+  min-width: 200px;
+  width: 75%;
+}
+
+.container h2 {
+  padding: 30px;
+}
+
+.container ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+
+.file-link {
+  margin: 20px;
+  padding: 36px;
+  width: 200px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.file-link:hover {
+  background-color: var(--color-hover);
+}
+
+.file-link img {
+  width: 40px;
+  padding: 20px 0px;
+}
+
+.file-link span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.empty {
+  margin: 20px 0px 40px 0px;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 750px) {
+  .file-link {
+    width: 180px;
+  }
+
+  .file-link img {
+    width: 40px;
+  }
+
+  .file-link span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container h2 {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+
+  .container ul {
+    margin-top: 0;
+  }
+
+  .file-link {
+    width: 150px;
+  }
+
+  .file-link img {
+    width: 30px;
+  }
+
+  .file-link span {
+    font-size: 0.9rem;
+  }
+}
